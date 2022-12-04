@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 const TaskItem = (props) => {
   return (
@@ -9,8 +8,10 @@ const TaskItem = (props) => {
         checked={props.task.checked}
         onChange={() => props.handleChecked(props.task.id)}
       />
-      <span>{props.task.content}</span>
-      <button onClick={() => props.handleDelete(props.task.id)}>delete</button>
+      <span>{props.task.title} </span>
+      <span> {props.task.content} </span>
+      {/* <span>{props.task.date.toISOstring()}</span> */}
+      <button onClick={() => props.handleDelete(props.task.id)}>Delete</button>
     </div>
   );
 };
