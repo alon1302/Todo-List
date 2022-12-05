@@ -9,7 +9,7 @@ import { v4 as uuid } from "uuid";
 const TasksManager = () => {
   const [tasks, setTasks] = useState([
     {
-      title: "Example Task->   ",
+      title: "Example Task",
       content: "take a shower",
       date: new Date(),
       checked: true,
